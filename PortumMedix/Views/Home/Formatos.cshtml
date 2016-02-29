@@ -1,0 +1,88 @@
+﻿@section Scripts
+{
+
+<script src="~/Content/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+<link href="~/Content/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        $("#tabs").tabs();
+    </script>
+}
+
+@{
+    ViewBag.Title = "Formatos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Formatos</h2>
+<hr />
+
+<div id="tabs">
+    <ul>
+        <li><a href="#Receta">Receta</a></li>
+        <li><a href="#Lab">Estudios de Lab.</a></li>
+        <li><a href="#Internamiento">Solicitud Iternamiento</a></li>
+        <li><a href="#Histopatologia">Solicitud Histopatologia</a></li>
+        <li><a href="#Radiologia">Solicitud Radiologia</a></li>
+    </ul>
+
+    <div id="Receta">       
+        <table style="border:1px solid black; width:100%; height:450px; padding:4px;  ">
+            <tr>
+                <td style="width:33%; "></td>
+                <td style="width:33%; ">
+                    Carlos Fernandez vela
+                    <br />
+                    Medicina Interna - Centro Medico Nacional
+                    <br />
+                    Cedula Profesional: 8536977
+                </td>
+                <td style="width:33%; "></td>
+            </tr>
+            <tr>
+                <td  style="padding-left:30px; padding-right:30px; " colspan="3">
+                    <hr />
+                    Veracruz, Veracruz, 20 de enero del 2016.<br />
+                    xxxxxxxxxxxxxxxxxxxxx<br />
+                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br />
+                    xxxxxxxx   xxxxxxxxxx<br />
+                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br />
+                    xxxxxxxx   xxxxxxxxx<br />
+                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br />
+
+                    <img src="~/Content/QR.jpg" style="float:right; height:86px; width:86px;" />
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-left:30px; padding-right:30px; " colspan="3">
+                    <hr />
+                    xxxxxxxx  xxxxxxxxxxx
+                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="Lab"> 
+        Estudios de Lab.       
+    </div>
+
+    <div id="Internamiento">
+        Solicitud Iternamiento        
+    </div>
+
+    <div id="Histopatologia">   
+        Solicitud Histopatologia     
+    </div>
+
+    <div id="Radiologia">        
+        Solicitud Radiologia
+    </div>
+
+</div>
+
+
+
+<hr />
+
+

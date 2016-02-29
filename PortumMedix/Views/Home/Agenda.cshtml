@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Agenda";
+}
+
+@section Scripts
+{
+
+<script src="~/Content/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+<link href="~/Content/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet" />
+<link href="~/Content/JqueyToast/jquery.toastmessage.css" rel="stylesheet" />
+<script src="~/Content/JqueyToast/jquery.toastmessage.js"></script>
+
+
+    <script type="text/javascript">
+        $("#datepicker").datepicker();
+
+        function ADMConsulta() {
+            $('div.toast-item-wrapper').remove();
+            $().toastmessage('showNoticeToast', 'Agregar Consulta');
+
+        }
+
+        function ADMIntervencion()
+        {
+            $('div.toast-item-wrapper').remove();
+            $().toastmessage('showNoticeToast', 'Agregar Intervencion');
+        }
+
+        function ImprimirAgenda()
+        {
+            $('div.toast-item-wrapper').remove();
+            $().toastmessage('showWarningToast', 'Imprimir Agenda');
+        }
+
+
+    </script>
+}
+
+
+<h2>Agenda</h2>
+<hr />
+<table style="width:100%; height:500px; ">
+    <tr>
+        <td width="24%">
+            <fieldset style="height:300px; margin:0px 5px 0px 0px;  padding:10px; ">
+                <legend>&nbsp;</legend>
+                <div id="datepicker"></div>
+            </fieldset>
+        </td>
+        <td  rowspan="2" width="76%">
+            <fieldset style="height:500px; margin:0px 5px 0px 0px; padding:10px; ">
+                <legend>&nbsp;Calendario</legend>
+            </fieldset>
+        </td>
+    </tr>
+    <tr>
+        <td width="24%">
+            <fieldset style="height:200px; margin:0px 5px 0px 0px; padding:10px; ">
+                <legend>&nbsp;Acciones</legend>
+                <br />
+                <input type="button" name="Agregar Consulta" value="Agregar Consulta" onclick="Javascript:ADMConsulta()" style="width:100%" />
+                <br /><br />
+                <input type="button" name="Agregar Intervencion" value="Agregar Intervencion" onclick="Javascript:ADMIntervencion()" style="width:100%"  />
+                <br /><br />
+                <input type="button" name="Imprimir Agenda" value="Imprimir Agenda" onclick="Javascript:ImprimirAgenda()" style="width:100%"  />
+
+            </fieldset>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,92 @@
+﻿@section Scripts
+{
+
+<script src="~/Content/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+<link href="~/Content/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        $("#tabs").tabs();
+    </script>
+}
+
+@{
+    ViewBag.Title = "Configuracion";
+}
+
+
+<h2>@ViewBag.Title.</h2>
+<hr />
+
+<div id="tabs">
+    <ul>
+        <li><a href="#tab1">Informacion Personal</a></li>
+        <li><a href="#tab2">Informacion Consultorio</a></li>
+        <li><a href="#tab3">Almacenamiento</a></li>
+        <li><a href="#tab4">Notificaciones</a></li>
+        <li><a href="#tab5">Permisos</a></li>
+        <li><a href="#tab6">Acerca de</a></li>
+    </ul>
+
+    <div id="tab1">
+        <br />
+
+        <table style="border:1px solid black; width:100%; height:450px; padding:4px;  ">
+            <tr>
+                <td style="width:33%; "></td>
+                <td style="width:33%; ">
+                    Informacion Personal de Jose Perez
+                </td>
+                <td style="width:33%; "></td>
+            </tr>
+            <tr>
+                <td style="padding-left:30px; padding-right:30px; ">
+                    Nombre: <br /><br />
+                    Apellido Paterno: <br /><br />
+                    Apellido Materno: <br /><br />
+                    
+
+                    Actual:<br /><br />
+                    Nuevo:
+
+                </td>
+                <td>
+
+                    <input type="text" style="width:100%;"><br /><br />
+                    <input type="text" style="width:100%;"><br /><br />
+                    <input type="text" style="width:100%;"><br /><br />
+
+                    <input type="text" style="width:100%; " ><br /><br />
+                    <input type="text" style="width:100%; ">
+                </td>
+                <td>
+
+
+                </td>
+            </tr>
+        </table>
+
+        <br />
+    </div>
+
+    <div id="tab2">
+        Informacion Personal
+    </div>
+
+    <div id="tab3">
+        Informacion Consultorio
+    </div>
+
+    <div id="tab4">
+        Almacenamiento
+    </div>
+
+    <div id="tab5">
+        Notificaciones
+    </div>
+
+    <div id="tab6">
+        Acerca de
+    </div>
+
+</div>
+
